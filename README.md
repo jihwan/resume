@@ -1,7 +1,6 @@
 # 황지환 (Ji Hwan, Hwang)
 
-[![email](https://img.shields.io/badge/email-zhwan.hwang@gmail.com-0229bf.svg)](mailto:zhwan.hwang@gmail.com) ![phone](https://img.shields.io/badge/phone-+82--10--4752--8950-0229bf.svg) [![blog](https://img.shields.io/badge/blog-zhwan.info-0229bf.svg)](http://zhwan.info/) [![github](https://img.shields.io/badge/github-jihwan-0229bf.svg)](https://github.com/jihwan/)
-
+[![email](https://img.shields.io/badge/email-zhwan.hwang@gmail.com-0229bf.svg)](mailto:zhwan.hwang@gmail.com) ![phone](https://img.shields.io/badge/phone-+82--10--4752--8950-0229bf.svg) [![blog](https://img.shields.io/badge/blog-zhwan.info-0229bf.svg)](http://zhwan.info/) [![github](https://img.shields.io/badge/github-jihwan-0229bf.svg)](https://github.com/jihwan/) ![현재](https://img.shields.io/badge/현재-재직중-0229bf.svg)
 > 13년차 개발자로 공장 자동화 어플리케이션 개발  분야에서 다양한 경험이 있습니다.
 Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 경험이 있으며 코드 품질 향상과 개발 문화 개선에 노력해 왔습니다.
 빠르게 발전하는 IT 기술에 뒤쳐지지 않기 위해 새로운 기술 흐름을 파악하고 항상 노력하고 있습니다.
