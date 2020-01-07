@@ -8,24 +8,22 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
 ---
 ### 경력
 - **에임시스템**                   ( 2012.4 ~ 재직중 )
-  Java 개발자
   <br>
   - BMOT MES/EAP
   - CSOT t3 EDA/SPC
   - 선행 기술 연구, 기술 지원
+    - aimplatform 개발 (품질분석 solution / BC framework)
+    - spc engine / 제품 개발
   <br>
 - **비스텔**                      (2010. 9 ~ 2012. 3)
-  Java 개발자
   <br>
   - SmartTool 개발 참여
   <br>
 - **플로소프트**                   (2008. 5 ~ 2010. 8)
-  Java, 웹 개발자
   <br>
   - 반송시스템 모니터링 개발
   <br>
 - **에임시스템**                   (2004. 11 ~ 2008. 4)
-  Java, 웹 개발자
   <br>
   - Hynix M11 MES 개발 참여
   - BOE Hydis AWS 개발 참여
@@ -62,11 +60,11 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
 
 | Etc.    	| Descriptions                  |
 |----------	|------------------------------	|
-| Database  | Oracle                        |
-| OS        | Unix, Linux                   |
+| Database  | ORACLE                        |
+| OS        | UNIX, LINUX                   |
 | MOM       | Tibrv                         |
-| WAS       | Tomcat                        |
-| DevTools  | Git, Svn, Maven, Ant          |
+| WAS       | TOMCAT                        |
+| DevTools  | SVN, MAVEN, ANT               |
 
 ---
 ### 자격증
@@ -76,7 +74,6 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
 ### 교육이수내역
 | 교육기관 | 이수내용 |
 |---|---|
-| KOSTA | Reactive Programming |
 | KOSTA | MSA와 Microservice 설계 |
 | KOSTA | MongoDB & BigData DBA 과정 |
 | KOSTA | JUnit, TDD, 그리고 CI(Continuous Integeration) |
