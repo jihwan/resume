@@ -41,7 +41,7 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
 |`SKHynix M16 MES (2020.02~2020.03)` | SKHynix | Linux,Unix / Oracle12c / Tibrv / Java | **개발자** / EISserver 테스트 |
 |`BMOT MES/EAP (2018.11~2019.12)` | BOE | Linux / Oracle12c / Tibrv / Java / Spring framework | **PL** / Analysis, Design, EAP/MES 수행 |
 |`CSOT EDA/SPC (2015.03~2016.04)` | CSOT | Linux / Oracle11g / Tibrv / Java / Spring framework | **PL** / Analysis, Design, 데이터 수집 모듈, EDA 분석 쿼리 엔진 |
-|`국책사업 (2013.06~2015.01)` |  | Windows / Oracle11g / Tibrv / Java / Spring framework | **PL** / Analysis, Design, aim platform, SPC 엔진 |
+|`YMS 국책사업 (2013.06~2015.01)` |  | Windows / Oracle11g / Tibrv / Java / Spring framework | **PL** / Analysis, Design, aim platform, SPC 엔진 |
 |`SFA TCS System (2012.11~2013.03)` | SFA | Windows / Oracle11g / Tibrv / Java / Spring framework | **개발자** / Virtual OHT 개발|
 |`Smart Tool (2011.05~2012.01)` | PSK | Windows / Oracle10g / Java / Spring framework | **개발자** / DataCollection Planning 모듈 담당 |
 |`MCS Report (2009.12~2010.08)` | 삼성전자(천안,온양) | UNIX / Oracle10g / Tomcat / Java / JSP / Javascript / Spring framework | **개발자** / 반송 report, dashboard |
