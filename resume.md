@@ -15,7 +15,7 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
   <br>
   - BMOT MES/EAP/SPC
   - CSOT t3 EDA/SPC
-  - 선행 기술 연구, 기술 지원, 국책사업
+  - 선행기술연구, 기술지원, 국책사업
     - aimplatform 개발 (품질분석 solution / BC framework)
     - spc engine / 제품 개발
   <br>
