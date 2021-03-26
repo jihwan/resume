@@ -21,7 +21,7 @@ Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 �
   <br>
 - **비스텔**                      (2010. 9 ~ 2012. 3)
   <br>
-  - SmartTool 개발
+  - SmartTool 개발 (Dcol/FDC)
   <br>
 - **플로소프트**                   (2009. 7 ~ 2010. 8)
   <br>
