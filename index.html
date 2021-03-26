@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>resume.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="%ED%99%A9%EC%A7%80%ED%99%98-ji-hwan-hwang">황지환 (JI HWAN, HWANG)</h1>
+<p><a href="mailto:zhwan.hwang@gmail.com"><img src="https://img.shields.io/badge/email-zhwan.hwang@gmail.com-0229bf.svg" alt="email"></a> <img src="https://img.shields.io/badge/phone-+82--10--4752--8950-0229bf.svg" alt="phone"> <a href="http://zhwan.info/"><img src="https://img.shields.io/badge/blog-zhwan.info-0229bf.svg" alt="blog"></a></p>
+<blockquote>
+<p>17년차 개발자로 공장 자동화 어플리케이션 개발  분야에서 다양한 경험이 있습니다.
+Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 경험이 있으며 코드 품질, 개발 생산성 향상을 위해 노력하고 있습니다.
+공장 자동화 부분 개발에 올바른 Object Oriented Programming 과 Domain Driven Design을 적용 하고자 노력하고 있습니다.</p>
+</blockquote>
+<hr>
+<h3 id="%EA%B2%BD%EB%A0%A5">경력</h3>
+<ul>
+<li><strong>티라유텍</strong>                   ( 2020.2 ~ 2021.3 )
+<br>
+<ul>
+<li>SKHynix M16 MES
+<br></li>
+</ul>
+</li>
+<li><strong>에임시스템</strong>                   ( 2012.4 ~ 2020.2 )
+<br>
+<ul>
+<li>BMOT MES/EAP/SPC</li>
+<li>CSOT t3 EDA/SPC</li>
+<li>선행기술연구, 기술지원, 국책사업
+<ul>
+<li>aimplatform 개발 (품질분석 solution / BC framework)</li>
+<li>spc engine / 제품 개발
+<br></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>비스텔</strong>                      (2010. 9 ~ 2012. 3)
+<br>
+<ul>
+<li>SmartTool 개발 (Dcol/FDC)
+<br></li>
+</ul>
+</li>
+<li><strong>플로소프트</strong>                   (2009. 7 ~ 2010. 8)
+<br>
+<ul>
+<li>반송시스템 모니터링
+<br></li>
+</ul>
+</li>
+<li><strong>에임시스템</strong>                   (2004. 11 ~ 2008. 4)
+<br>
+<ul>
+<li>Hynix M11 MES</li>
+<li>BOE Hydis AWS</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">프로젝트</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">프로젝트</th>
+<th style="text-align:left">고객사</th>
+<th style="text-align:left">환경/기술</th>
+<th style="text-align:left">역할 / 수행업무</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"><code>SKHynix M16 MES (2020.02~2020.03)</code></td>
+<td style="text-align:left">SKHynix</td>
+<td style="text-align:left">Linux,Unix / Oracle12c / Tibrv / Java</td>
+<td style="text-align:left"><strong>개발자</strong> / EISserver 테스트</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>BMOT MES/EAP (2018.11~2019.12)</code></td>
+<td style="text-align:left">BOE</td>
+<td style="text-align:left">Linux / Oracle12c / Tibrv / Java / Spring framework</td>
+<td style="text-align:left"><strong>PL</strong> / Analysis, Design, EAP/MES 수행</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>CSOT EDA/SPC (2015.03~2016.04)</code></td>
+<td style="text-align:left">CSOT</td>
+<td style="text-align:left">Linux / Oracle11g / Tibrv / Java / Spring framework</td>
+<td style="text-align:left"><strong>PL</strong> / Analysis, Design, 데이터 수집 모듈, EDA 분석 쿼리 엔진</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>YMS 국책사업 (2013.06~2015.01)</code></td>
+<td style="text-align:left"></td>
+<td style="text-align:left">Windows / Oracle11g / Tibrv / Java / Spring framework</td>
+<td style="text-align:left"><strong>PL</strong> / Analysis, Design, aim platform, SPC 엔진</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>SFA TCS System (2012.11~2013.03)</code></td>
+<td style="text-align:left">SFA</td>
+<td style="text-align:left">Windows / Oracle11g / Tibrv / Java / Spring framework</td>
+<td style="text-align:left"><strong>개발자</strong> / Virtual OHT 개발</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Smart Tool (2011.05~2012.01)</code></td>
+<td style="text-align:left">PSK</td>
+<td style="text-align:left">Windows / Oracle10g / Java / Spring framework</td>
+<td style="text-align:left"><strong>개발자</strong> / DataCollection Planning 모듈 담당</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>MCS Report (2009.12~2010.08)</code></td>
+<td style="text-align:left">삼성전자(천안,온양)</td>
+<td style="text-align:left">UNIX / Oracle10g / Tomcat / Java / JSP / Javascript / Spring framework</td>
+<td style="text-align:left"><strong>개발자</strong> / 반송 report, dashboard</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>DataCollection 구조개선 (2009.08~2009.10)</code></td>
+<td style="text-align:left">삼성전자(탕정)</td>
+<td style="text-align:left">UNIX / Oracle10g / Java / Spring framework</td>
+<td style="text-align:left"><strong>개발자</strong> / 구조개선</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>Hynix M11 MES (2007.09~2008.04)</code></td>
+<td style="text-align:left">Hynix(청주)</td>
+<td style="text-align:left">UNIX / Oracle10g / Tibrv / Java / Spring framework</td>
+<td style="text-align:left"><strong>개발자</strong> / EIS Server, DataCollection</td>
+</tr>
+<tr>
+<td style="text-align:left"><code>BOE Hydis AWS (2005.08~2006.02)</code></td>
+<td style="text-align:left">BOE-Hydis(이천)</td>
+<td style="text-align:left">WindowsNT / Oracle9i / Tomcat / Java / JSP / Laszlo</td>
+<td style="text-align:left"><strong>개발자</strong> / 공정 warning dashboard</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%ED%95%99%EB%A0%A5">학력</h3>
+<ul>
+<li><strong>한국외국어대학교</strong> (1996. 3 ~ 2004. 2)
+<ul>
+<li>정보통신공학 학사졸업</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="%EB%B3%B4%EC%9C%A0%EA%B8%B0%EC%88%A0">보유기술</h3>
+<table>
+<thead>
+<tr>
+<th>Languages</th>
+<th>Frameworks</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Java</td>
+<td>Spring framework, Spring boot, Spring batch, Spring data, Jpa</td>
+</tr>
+<tr>
+<td>Javascript</td>
+<td>Jquery, React.js</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>Etc.</th>
+<th>Descriptions</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Database</td>
+<td>ORACLE</td>
+</tr>
+<tr>
+<td>OS</td>
+<td>UNIX, LINUX</td>
+</tr>
+<tr>
+<td>MOM</td>
+<td>Tibrv</td>
+</tr>
+<tr>
+<td>WAS</td>
+<td>TOMCAT</td>
+</tr>
+<tr>
+<td>DevTools</td>
+<td>SVN, MAVEN, ANT</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3 id="%EC%9E%90%EA%B2%A9%EC%A6%9D">자격증</h3>
+<ul>
+<li>정보처리기사 (2004. 12)</li>
+</ul>
+<hr>
+<h3 id="%EA%B5%90%EC%9C%A1%EC%9D%B4%EC%88%98%EB%82%B4%EC%97%AD">교육이수내역</h3>
+<table>
+<thead>
+<tr>
+<th>교육기관</th>
+<th>이수내용</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>KOSTA</td>
+<td>MSA와 Microservice 설계</td>
+</tr>
+<tr>
+<td>KOSTA</td>
+<td>MongoDB &amp; BigData DBA 과정</td>
+</tr>
+<tr>
+<td>KOSTA</td>
+<td>JUnit, TDD, 그리고 CI(Continuous Integeration)</td>
+</tr>
+<tr>
+<td>KOSTA</td>
+<td>스크럼(scrum)기반 Agile 프로젝트 실습</td>
+</tr>
+<tr>
+<td></td>
+<td>한국 스프링 사용자 그룹 컨퍼런스, 세미나 참가</td>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
