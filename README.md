@@ -1,6 +1,3 @@
-# 황지환 (Ji Hwan, Hwang)
-
-[![email](https://img.shields.io/badge/email-zhwan.hwang@gmail.com-0229bf.svg)](mailto:zhwan.hwang@gmail.com) ![phone](https://img.shields.io/badge/phone-+82--10--4752--8950-0229bf.svg) [![blog](https://img.shields.io/badge/blog-zhwan.info-0229bf.svg)](http://zhwan.info/)
 > 16년차 개발자로 공장 자동화 어플리케이션 개발  분야에서 다양한 경험이 있습니다.
 Java, Spring framework 등의 기술을 사용하여 제품 개발 및 적용 경험이 있으며 코드 품질, 개발 생산성 향상을 위해 노력하고 있습니다.
 공장 자동화 부분 개발에 올바른 Object Oriented Programming 과 Domain Driven Design을 적용 하고자 노력하고 있습니다.
