@@ -1,4 +1,9 @@
-**제조·반도체·디스플레이 산업 도메인 경력 21년의 소프트웨어 개발 및 프로젝트 리더**
+# 황지환 (Ji Hwan, Hwang)
+
+[![email](https://img.shields.io/badge/email-zhwan.hwang@gmail.com-0229bf.svg)](mailto:zhwan.hwang@gmail.com) ![phone](https://img.shields.io/badge/phone-+82--10--4752--8950-0229bf.svg)
+
+
+>**제조·반도체·디스플레이 산업 도메인 경력 21년의 소프트웨어 개발 및 프로젝트 리더**
 
 - 하이테크 소재 제조 분야에서 제품 개발, 구축, 현장 적용까지 수행한 **Smart Factory 전문 도메인 개발자** 입니다.
 - 21년간 축적된 도메인 경험과, Smart Factory Enterprise Application 개발 역량에 강점이 있으며,
