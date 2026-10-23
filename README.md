@@ -8,7 +8,11 @@
 - 하이테크 소재 제조 분야에서 제품 개발, 구축, 현장 적용까지 수행한 **Smart Factory 전문 도메인 개발자** 입니다.
 - 21년간 축적된 도메인 경험과, Smart Factory Enterprise Application 개발 역량에 강점이 있으며,
 - 현재는 **문제 정의, 제품 방향성 결정, 리스크 관리**에 포커스를 두고 있습니다.
-- 제조 산업의 AI 활용 가능성에 주목하여 **RAG(Retrieval-Augmented Generation), AI Agent 기술을 학습​**하고 있으며, 기존 제조 시스템 경험과 AI 기술을 결합하여 향후 **Smart Factory 및 제조 AI 분야의 경쟁력을 확대**하고 있습니다.
+- 제조 산업의 AI 활용 가능성에 주목하여 **RAG(Retrieval-Augmented Generation), AI Agent 기술을 학습​**하고 있으며, 
+- 기존 제조 시스템 경험과 AI 기술을 결합하여 향후 **Smart Factory 및 제조 AI 분야의 경쟁력을 확대**하고 있습니다.
+
+
+## 핵심 역량
 
 
 ---
@@ -86,7 +90,7 @@
 
 | Tools    	|                   |
 |----------	|------------------------------	|
-| AI Dev Tools  | Cursor, Copilot, Claude code               |
+| AI Dev Tools  | Claude code, Cursor, Copilot               |
 | Database  | Oracle, MariaDB               |
 | OS        | Unix, Linux                   |
 | MOM       | Tibrv                         |
